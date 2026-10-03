@@ -1,366 +1,389 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="ar" dir="rtl">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <title>سياسة الخصوصية | ParentGuard Privacy Policy</title>
 <style>
   :root {
-    --ink: #1c2b28;
-    --ink-soft: #435a54;
-    --paper: #fbfaf6;
-    --panel: #f2f0e8;
-    --line: #d8d4c6;
-    --accent: #2f6f5e;
-    --accent-soft: #e4efe9;
+    color-scheme: light dark;
   }
-  * { box-sizing: border-box; }
   body {
-    margin: 0;
-    background: var(--paper);
-    color: var(--ink);
-    font-family: "Segoe UI", Tahoma, Arial, sans-serif;
-    line-height: 1.9;
-  }
-  .wrap {
-    max-width: 820px;
+    font-family: -apple-system, "Segoe UI", Tahoma, Arial, sans-serif;
+    max-width: 780px;
     margin: 0 auto;
-    padding: 48px 24px 96px;
+    padding: 32px 20px 80px;
+    line-height: 1.8;
+    color: #1a1a1a;
+    background: #fff;
   }
-  header.top {
-    border-bottom: 3px solid var(--accent);
-    padding-bottom: 24px;
-    margin-bottom: 40px;
+  @media (prefers-color-scheme: dark) {
+    body { color: #e8e8e8; background: #14161a; }
+    a { color: #7cb0ff; }
+    hr { border-color: #333; }
+    .lang-toggle a { color: #7cb0ff; }
   }
-  .badge {
-    display: inline-block;
-    background: var(--accent-soft);
-    color: var(--accent);
-    font-size: 13px;
-    font-weight: 700;
-    padding: 4px 12px;
-    border-radius: 999px;
-    letter-spacing: .02em;
-    margin-bottom: 14px;
+  h1 { font-size: 1.6rem; margin-bottom: 4px; }
+  h2 { font-size: 1.2rem; margin-top: 2.2em; }
+  .subtitle { opacity: 0.7; margin-top: 0; }
+  ul { padding-inline-start: 1.4em; }
+  li { margin-bottom: 0.5em; }
+  hr { margin: 3em 0; border: none; border-top: 1px solid #ccc; }
+  section[lang="en"] { direction: ltr; text-align: left; }
+  section[lang="ar"] { direction: rtl; text-align: right; }
+  .lang-toggle {
+    position: sticky; top: 0; background: inherit; padding: 8px 0;
+    font-size: 0.9rem; display: flex; gap: 16px; z-index: 10;
   }
-  h1 {
-    font-size: 30px;
-    margin: 0 0 6px;
-    color: var(--ink);
-  }
-  .meta {
-    color: var(--ink-soft);
-    font-size: 14px;
-  }
-  h2 {
-    font-size: 20px;
-    margin: 44px 0 12px;
-    padding-inline-start: 14px;
-    border-inline-start: 4px solid var(--accent);
-  }
-  h3 {
-    font-size: 16px;
-    margin: 22px 0 8px;
-    color: var(--accent);
-  }
-  p, li { color: var(--ink); font-size: 15.5px; }
-  ul { padding-inline-start: 22px; margin: 8px 0; }
-  li { margin-bottom: 6px; }
-  .card {
-    background: var(--panel);
-    border: 1px solid var(--line);
-    border-radius: 10px;
-    padding: 18px 20px;
-    margin: 14px 0;
-  }
-  .contact {
-    background: var(--accent-soft);
-    border: 1px solid var(--accent);
-    border-radius: 10px;
-    padding: 20px 22px;
-    margin-top: 12px;
-  }
-  .contact a { color: var(--accent); font-weight: 700; text-decoration: none; }
-  table {
-    width: 100%;
-    border-collapse: collapse;
-    margin: 12px 0;
-    font-size: 14.5px;
-  }
-  th, td {
-    border: 1px solid var(--line);
-    padding: 10px 12px;
-    text-align: right;
-    vertical-align: top;
-  }
-  th { background: var(--panel); }
-  .lang-divider {
-    margin: 80px 0 40px;
-    text-align: center;
-    color: var(--ink-soft);
-    font-size: 13px;
-    letter-spacing: .08em;
-    text-transform: uppercase;
-    position: relative;
-  }
-  .lang-divider::before {
-    content: "";
-    position: absolute;
-    top: 50%;
-    right: 0;
-    left: 0;
-    height: 1px;
-    background: var(--line);
-    z-index: 0;
-  }
-  .lang-divider span {
-    background: var(--paper);
-    padding: 0 16px;
-    position: relative;
-    z-index: 1;
-  }
-  .en-section { direction: ltr; text-align: left; font-family: -apple-system, "Segoe UI", Roboto, Arial, sans-serif; }
-  .en-section h2 { padding-inline-start: 14px; border-inline-start: 4px solid var(--accent); }
-  footer {
-    margin-top: 60px;
-    padding-top: 20px;
-    border-top: 1px solid var(--line);
-    color: var(--ink-soft);
-    font-size: 13px;
-    text-align: center;
-  }
+  .lang-toggle a { text-decoration: none; font-weight: 600; }
+  .contact { font-weight: 600; }
 </style>
 </head>
 <body>
-<div class="wrap">
 
-  <header class="top">
-    <span class="badge">ParentGuard</span>
-    <h1>سياسة الخصوصية</h1>
-    <div class="meta">آخر تحديث: 12 أغسطس 2026</div>
-  </header>
+<div class="lang-toggle">
+  <a href="#ar">العربية</a>
+  <a href="#en">English</a>
+</div>
+
+<section id="ar" lang="ar">
+  <h1>سياسة الخصوصية — ParentGuard</h1>
+  <p class="subtitle">آخر تحديث: أكتوبر 2026</p>
 
   <p>
-    تطبيق <strong>ParentGuard</strong> هو تطبيق حماية أبوية يقوم أحد الوالدين بتثبيته وإعداده بموافقته
-    الشخصية على جهاز طفله، بهدف حماية الطفل من التعرّض لمحتوى مرئي غير لائق أثناء استخدام الجهاز.
-    توضح هذه السياسة بدقة أي بيانات يجمعها التطبيق، وكيف تُستخدم، وأين تُخزّن، ومع من (إن وُجد) تُشارك.
+    ParentGuard تطبيق رقابة أبوية. يثبّته الوالد أو الوصي على هاتف الطفل،
+    ويستخدم هاتفاً ثانياً (جهاز الأهل) لرؤية التنبيهات وضبط الحدود. توضح هذه
+    الصفحة ما يجمعه التطبيق، وإلى أين يذهب، وكيف تحذفه.
   </p>
 
-  <h2>١. البيانات التي نجمعها</h2>
-
-  <h3>أ. معلومات الحساب</h3>
-  <div class="card">
-    <p>عند إنشاء حساب الوالد، نجمع:</p>
-    <ul>
-      <li>البريد الإلكتروني المستخدم لتسجيل الحساب والدخول إليه.</li>
-      <li>كلمة المرور، والتي تُدار وتُخزَّن بشكل مشفّر بالكامل عبر خدمة Firebase Authentication التابعة لشركة Google، ولا نطّلع نحن على كلمة المرور الفعلية في أي وقت.</li>
-    </ul>
-  </div>
-
-  <h3>ب. فحص محتوى الشاشة (الميزة الأساسية للحماية)</h3>
-  <div class="card">
-    <p>لتحقيق غرض التطبيق الأساسي — كشف المحتوى المرئي غير اللائق وتطبيق طبقة تمويه (بلر) عليه تلقائياً — يقوم التطبيق بما يلي:</p>
-    <ul>
-      <li><strong>ماذا يُلتقط:</strong> يلتقط التطبيق لقطة دورية من محتوى الشاشة المعروض، وذلك عبر إحدى وسيلتين تقنيتين حسب إصدار نظام أندرويد المستخدم (خدمة إمكانية الوصول Accessibility Service على أندرويد 11 فما فوق، أو تسجيل الشاشة MediaProjection على الإصدارات الأقدم).</li>
-      <li><strong>كيف تُعالَج:</strong> تُعالَج كل لقطة محلياً وعلى الجهاز نفسه فقط، عبر نموذج تعلّم آلي يعمل بالكامل دون اتصال بالإنترنت، لتحديد درجة ثقة رقمية حول احتواء الصورة على محتوى غير لائق.</li>
-      <li><strong>ماذا يحدث للصورة بعدها:</strong> تُحذف اللقطة فوراً من الذاكرة بعد تحليلها ولا تُخزَّن على القرص إطلاقاً، ولا تُرسَل عبر الإنترنت لأي خادم أو أي طرف كان — لا نحن ولا أي جهة أخرى نطّلع على محتوى الشاشة الفعلي.</li>
-      <li><strong>القرار المتخذ:</strong> بناءً على درجة الثقة فقط، يُظهر التطبيق أو يُخفي طبقة تمويه واحدة على الشاشة. هذا قرار آلي بقواعد ثابتة ومحددة مسبقاً بالكود، وليس قراراً ذكاءً اصطناعياً مستقلاً، والخدمة لا تقوم بأي ضغطة أو لمسة أو أي فعل آخر على الجهاز.</li>
-    </ul>
-  </div>
-
-  <h3>ج. بيانات وصفية محدودة (Metadata)</h3>
-  <div class="card">
-    <p>يحتفظ التطبيق بسجل محلي بسيط جداً يشمل فقط:</p>
-    <ul>
-      <li>التوقيت الزمني للحدث.</li>
-      <li>اسم التطبيق الذي كان مفتوحاً بالمقدمة وقت الحدث.</li>
-      <li>درجة الثقة الرقمية الناتجة عن الفحص (رقم فقط، وليس الصورة نفسها).</li>
-    </ul>
-    <p>هذا السجل يُخزَّن على جهاز الطفل، ويُزامَن مع مستند العائلة الخاص بحساب الوالد على قاعدة بيانات Firestore
-    (خدمة تابعة لشركة Google) <strong>فقط إذا فعّل الوالد ميزة الإشعارات</strong>. لا يُشارك هذا السجل مع أي طرف
-    ثالث خارج نطاق حساب العائلة نفسه.</p>
-  </div>
-
-  <h3>د. صلاحية "مدير الجهاز" (Device Admin)</h3>
-  <div class="card">
-    <p>يطلب التطبيق صلاحية "مدير الجهاز" دون تفعيل أي سياسة قفل أو مسح بيانات أو كلمة مرور أو تقييد كاميرا.
-    الأثر الوحيد لهذه الصلاحية هو أن نظام أندرويد يطلب تعطيلها يدوياً من الإعدادات قبل إمكانية حذف التطبيق،
-    وذلك لمنع الطفل من إزالة تطبيق الحماية دون علم الوالد أو موافقته.</p>
-  </div>
-
-  <h2>٢. كيف نستخدم البيانات</h2>
+  <h2>محتوى الشاشة: يُفحص على الهاتف ولا يُخزَّن ولا يُرفع</h2>
   <ul>
-    <li>تشغيل ميزة الحماية الأساسية (كشف المحتوى غير اللائق وتمويهه).</li>
-    <li>تمكين الوالد من تسجيل الدخول وإدارة إعدادات الحماية.</li>
-    <li>إرسال إشعارات للوالد (فقط إذا فعّلها بنفسه).</li>
-    <li>منع إزالة التطبيق من الجهاز دون تدخل الوالد.</li>
-  </ul>
-  <p>لا نستخدم أي بيانات لأغراض إعلانية أو تسويقية أو لبناء ملفات تعريف سلوكية، ولا نبيع أي بيانات لأي طرف كان.</p>
-
-  <h2>٣. مشاركة البيانات مع أطراف ثالثة</h2>
-  <p>لا نشارك بيانات المستخدمين مع أي طرف ثالث لأغراض تجارية. الجهة الوحيدة التي تُعالَج البيانات عبر خدماتها
-  التقنية هي:</p>
-  <table>
-    <tr><th>الخدمة</th><th>الغرض</th></tr>
-    <tr><td>Firebase Authentication (Google)</td><td>إدارة تسجيل الدخول وتخزين بيانات الحساب بشكل آمن ومشفّر</td></tr>
-    <tr><td>Firebase Firestore (Google)</td><td>مزامنة البيانات الوصفية المحدودة بين جهاز الطفل وحساب الوالد</td></tr>
-  </table>
-  <p>هذه الخدمات تعمل بصفتها معالِج بيانات نيابة عنا، وتخضع لسياسات الخصوصية والأمان الخاصة بشركة Google.</p>
-
-  <h2>٤. أمان البيانات والاحتفاظ بها</h2>
-  <ul>
-    <li>لا تُخزَّن لقطات الشاشة أو محتواها في أي وقت — تُعالَج وتُحذف فوراً بالذاكرة فقط.</li>
-    <li>البيانات الوصفية المحدودة تبقى مخزّنة إلى حين قيام الوالد بإلغاء ربط الحساب أو حذف التطبيق.</li>
-    <li>عند إلغاء ربط الحساب، تُزال بيانات الربط الخاصة بالجهاز من نظامنا.</li>
+    <li>للكشف عن الصور غير اللائقة، يلتقط التطبيق صورة للشاشة بشكل متكرر
+      طوال فترة الحماية. يستخدم تسجيل الشاشة في أندرويد (MediaProjection)،
+      أو خدمة إمكانية الوصول (Accessibility) على أندرويد 11 وما بعده.</li>
+    <li>يفحص نموذج ذكاء اصطناعي داخل التطبيق كل صورة على هاتف الطفل، ثم تُهمَل
+      الصورة. <strong>صور الشاشة لا تُحفظ، ولا تُرسَل إلينا ولا إلى أي جهة
+      أخرى.</strong></li>
+    <li>لا يقرأ التطبيق النصوص الظاهرة على الشاشة، ولا كلمات المرور، ولا ما
+      تكتبه.</li>
   </ul>
 
-  <h2>٥. خصوصية الأطفال</h2>
-  <p>هذا التطبيق مخصص للاستخدام <strong>من قِبل الوالد</strong> لحماية طفله، وليس تطبيقاً موجّهاً للأطفال
-  أنفسهم أو يستهدفهم كمستخدمين مباشرين للتسجيل أو التفاعل. حساب الوالد هو الحساب الوحيد الذي يُنشأ ويُدار
-  ضمن التطبيق. لا نجمع عمداً معلومات شخصية مباشرة من الأطفال أنفسهم.</p>
-
-  <h2>٦. حقوق المستخدم</h2>
+  <h2>البيانات التي نخزّنها على خوادمنا</h2>
+  <p>
+    يستخدم التطبيق Google Firebase كخادم خلفي. هذه هي البيانات المخزَّنة هناك،
+    ولا شيء غيرها:
+  </p>
   <ul>
-    <li>يحق لك، بصفتك الوالد المسجّل، طلب الاطلاع على البيانات المرتبطة بحسابك.</li>
-    <li>يحق لك طلب حذف حسابك وكل البيانات المرتبطة به بشكل كامل.</li>
-    <li>يمكنك إلغاء ربط بريدك الإلكتروني من الجهاز في أي وقت عبر إعدادات التطبيق.</li>
+    <li><strong>الاقتران والحسابات:</strong> معرّف عائلة عشوائي، ومعرّف مستخدم
+      لكل جهاز، والبريد الإلكتروني للوالد (انظر "حساب الأهل" أدناه).</li>
+    <li><strong>اسم الطفل (اختياري):</strong> اسم عرض يكتبه الوالد أو الطفل،
+      بحد أقصى 60 حرفاً. يمكنك ألا تستخدم الاسم الكامل.</li>
+    <li><strong>التنبيهات:</strong> عند اكتشاف محتوى غير لائق يحفظ التطبيق
+      الوقت، واسم التطبيق واسم حزمته، ودرجة ثقة، ومعرّف الطفل. لا تُحفظ أي
+      صورة. ولا تُرسَل التنبيهات إلا إذا فعّل الوالد الإشعارات وكان الجهازان
+      مقترنين.</li>
+    <li><strong>التطبيقات المثبّتة:</strong> اسم كل تطبيق على هاتف الطفل واسم
+      حزمته (بلا أيقونات ولا بيانات استخدام)، ليختار الوالد التطبيقات التي
+      يريد حظرها. تُحدَّث القائمة كل مرة يبدأ فيها التطبيق.</li>
+    <li><strong>حالة الحماية:</strong> هل الحماية تعمل، وهل الشاشة مضاءة، وسبب
+      إيقاف الحماية (كلمة المرور، أو أمر من الوالد، أو إيقاف صلاحية)، ووقت
+      آخر إبلاغ.</li>
+    <li><strong>إعدادات الأهل:</strong> التطبيقات المحظورة والمقيّدة، وحد
+      الوقت اليومي، والجدول، وهل يجب تشغيل الحماية.</li>
+    <li><strong>رموز الإشعارات:</strong> رمز إشعارات (FCM) لكل جهاز مقترن،
+      لتصل إليه التنبيهات والتحديثات الصامتة.</li>
   </ul>
-  <p>لممارسة أي من هذه الحقوق، تواصل معنا عبر البريد الإلكتروني أدناه.</p>
+  <p>
+    تبقى التنبيهات والحالة والإعدادات إلى أن تحذفها أنت (انظر "حذف بياناتك").
+    لا يوجد حذف تلقائي بعد مدة معيّنة.
+  </p>
 
-  <h2>٧. تحديثات هذه السياسة</h2>
-  <p>قد نحدّث هذه السياسة من وقت لآخر لتعكس أي تغيير في طريقة عمل التطبيق. سيظهر تاريخ آخر تحديث دائماً
-  أعلى هذه الصفحة، وننصح بمراجعتها بشكل دوري.</p>
+  <h2>حساب الأهل</h2>
+  <ul>
+    <li>يسجّل جهاز الأهل الدخول ببريد إلكتروني وكلمة مرور عبر Firebase
+      Authentication (خدمة من Google). يتعامل Firebase مع بريدك وكلمة مرورك
+      لتسجيل الدخول ولرسائل إعادة تعيين كلمة المرور. نحن لا نرى كلمة
+      مرورك.</li>
+    <li>جهاز الطفل لا يستخدم بريداً إلكترونياً. يسجّل الدخول بشكل مجهول
+      ويحصل على معرّف عشوائي.</li>
+    <li>وبشكل منفصل، للتطبيق كلمة مرور أهل خاصة به تقفل الإعدادات وتمنع
+      الطفل من إيقاف الحماية. تُخزَّن على الهاتف فقط، على شكل بصمة مشفّرة
+      بملح عشوائي (Hash).</li>
+  </ul>
 
-  <div class="contact">
-    <h3 style="margin-top:0;">التواصل معنا</h3>
-    <p>لأي استفسار يخص الخصوصية أو البيانات، أو لطلب حذف حسابك:</p>
-    <p><a href="mailto:ParentGuard.app11@gmail.com">ParentGuard.app11@gmail.com</a></p>
-  </div>
+  <h2>الرسائل التي نرسلها</h2>
+  <ul>
+    <li>تنبيه إلى جهاز الأهل عند اكتشاف شيء. يعرض اسم الطفل (أو كلمة "الطفل")
+      واسم التطبيق.</li>
+    <li>ملخص أسبوعي إلى جهاز الأهل: عدد التنبيهات في آخر 7 أيام فقط.</li>
+    <li>تحديثات صامتة إلى جهاز الطفل تطلب منه جلب إعدادات الأهل الجديدة، أو
+      فك الاقتران بعد حذف بيانات العائلة.</li>
+  </ul>
 
-  <div class="lang-divider"><span>English Version</span></div>
+  <h2>الخدمات التي تعالج البيانات نيابة عنا</h2>
+  <ul>
+    <li>Google Firebase: المصادقة، وقاعدة بيانات Firestore، والإشعارات (Cloud
+      Messaging)، وCloud Functions، وسجلات Firebase.</li>
+    <li><strong>Play Integrity / App Check:</strong> يطلب التطبيق من Google
+      التأكد أن الطلبات تأتي من التطبيق الحقيقي غير المعدَّل على جهاز أصلي.
+      هذا يرسل فحصاً للجهاز والتطبيق إلى Google.</li>
+    <li><strong>Crashlytics:</strong> إذا تعطّل التطبيق يُرسَل تقرير إلى
+      Firebase فيه تفاصيل العطل، وموديل الجهاز، وإصدار أندرويد، وإصدار
+      التطبيق، ومعرّف تثبيت Firebase. لا يحتوي على محتوى الشاشة ولا على أي
+      بيانات نضيفها نحن. لا يمكن إيقافه من داخل التطبيق.</li>
+  </ul>
+  <p>
+    تعالج هذه الخدمات البيانات نيابة عنا. نحن لا نبيع البيانات، ولا نعرض
+    إعلانات، ولا نستخدم أدوات إعلانات أو تحليلات تتبّع، ولا نشارك البيانات مع
+    أي جهة أخرى.
+  </p>
 
-  <div class="en-section">
+  <h2>البيانات المخزَّنة على الهاتف فقط</h2>
+  <ul>
+    <li><strong>مشفّرة على الهاتف:</strong> بصمة كلمة مرور الأهل، والبريد
+      المحفوظ، وتفاصيل الاقتران، ودور الجهاز، وإعدادات الحماية، والتطبيقات
+      المحظورة، وحدود الوقت.</li>
+    <li><strong>غير مشفّرة بشكل منفصل</strong> (محمية فقط بتخزين أندرويد الخاص
+      بالتطبيق): سجل الاكتشاف المحلي (الوقت والتطبيق)، وقائمة التنبيهات
+      المستلمة، وقائمة التطبيقات المراقَبة، واللغة، وحالة المزامنة.</li>
+    <li>النسخ الاحتياطي في أندرويد معطّل لهذا التطبيق. حذف التطبيق أو مسح
+      بياناته يزيل كل ما هو مخزَّن على الهاتف.</li>
+  </ul>
 
-    <h1 style="font-size:26px;">Privacy Policy</h1>
-    <div class="meta">Last updated: August 12, 2026</div>
+  <h2>الصلاحيات التي يطلبها التطبيق</h2>
+  <ul>
+    <li><strong>تسجيل الشاشة (MediaProjection):</strong> لفحص الشاشة على
+      الهاتف. يوقفه أندرويد عند قفل الشاشة.</li>
+    <li><strong>خدمة إمكانية الوصول (Accessibility):</strong> طريقة ثانية
+      لفحص الشاشة تستمر في العمل والشاشة مقفلة. تلتقط صورة الشاشة، وتقرأ اسم
+      التطبيق المفتوح وحجم عناصر الشاشة ومكانها، مثل مشغّل الفيديو. لا تقرأ
+      النصوص ولا كلمات المرور. يشرح التطبيق ذلك ويطلب موافقتك قبل أن ينقلك
+      إلى إعدادات إمكانية الوصول.</li>
+    <li><strong>العرض فوق التطبيقات الأخرى:</strong> لتمويه المحتوى المُنبَّه
+      عنه ولعرض شارة صغيرة تفيد بأن الحماية تعمل.</li>
+    <li><strong>الوصول إلى إحصائيات الاستخدام:</strong> لمعرفة التطبيق المفتوح
+      حالياً، لحدود الوقت والحظر.</li>
+    <li><strong>الإشعارات:</strong> للإشعار الدائم "الحماية تعمل" ولتنبيهات
+      جهاز الأهل.</li>
+    <li><strong>الكاميرا:</strong> فقط لمسح رمز QR للاقتران. لا تُلتقط أو
+      تُحفظ أي صورة أو فيديو.</li>
+    <li><strong>إدارة الجهاز (Device Admin):</strong> تجعل حذف التطبيق دون
+      كلمة مرور الأهل أصعب.</li>
+    <li><strong>التشغيل بعد إعادة التشغيل، واستثناء تحسين البطارية، والخدمة
+      في المقدمة:</strong> لتستمر الحماية بالعمل في الخلفية.</li>
+    <li><strong>البصمة (اختياري):</strong> لفتح التطبيق ببصمة الإصبع أو
+      الوجه. تبقى على الهاتف ولا نستلم منها شيئاً.</li>
+  </ul>
 
-    <p style="margin-top:20px;">
-      <strong>ParentGuard</strong> is a parental-control app that a parent installs and configures, with
-      their own consent, on their child's device to help protect the child from exposure to inappropriate
-      visual content. This policy explains exactly what data the app collects, how it is used, where it is
-      stored, and whether (and with whom) it is shared.
-    </p>
+  <h2>حذف بياناتك</h2>
+  <p>
+    على جهاز الأهل، افتح شاشة التحكم عن بعد واضغط "حذف بيانات العائلة
+    نهائياً".
+  </p>
+  <ul>
+    <li><strong>هذا يحذف</strong> كل ما هو مخزَّن للعائلة في قاعدة بياناتنا:
+      سجل العائلة، والأطفال المقترنين، وأسماء الأطفال، والتنبيهات، وحالة
+      الحماية، والإعدادات، ورموز الإشعارات، وقائمة التطبيقات المثبّتة،
+      والدعوات المعلّقة. ويُطلب من جهاز الطفل فك الاقتران. يعمل الحذف على
+      خادمنا، لذا قد يستغرق وقتاً قصيراً.</li>
+    <li><strong>هذا لا يحذف</strong> حسابات تسجيل الدخول (حساب بريد الأهل
+      والمعرّف المجهول لجهاز الطفل)، ولا تقارير الأعطال المحفوظة لدى
+      Firebase، ولا سطور سجلات الخادم المحفوظة لدى Google Cloud.</li>
+    <li><strong>لا يوجد حذف للحساب من داخل التطبيق بعد.</strong> ليس في التطبيق
+      طريقة لحذف حساب تسجيل الدخول. "حذف بيانات العائلة" يزيل بيانات العائلة،
+      لكنه لا يزيل حساب تسجيل الدخول.</li>
+    <li>حذف التطبيق يزيل فقط ما هو مخزَّن على ذلك الهاتف.</li>
+  </ul>
 
-    <h2>1. Information We Collect</h2>
+  <h2>خصوصية الأطفال</h2>
+  <p>
+    يُعدّ التطبيق الوالد أو الوصي ويعمل على هاتف طفله. وهو غير مخصص لاستخدام
+    الأطفال بمفردهم. والوالد أو الوصي مسؤول عن إعداده وفق القانون المعمول به
+    في بلده.
+  </p>
 
-    <h3>a. Account Information</h3>
-    <div class="card">
-      <ul>
-        <li>The email address used to register and sign in to the parent account.</li>
-        <li>Your password, which is fully encrypted and managed by Google's Firebase Authentication —
-        we never have access to your actual password at any time.</li>
-      </ul>
-    </div>
+  <h2>التواصل</h2>
+  <p class="contact">parentguard.app11@gmail.com</p>
 
-    <h3>b. Screen Content Scanning (Core Protection Feature)</h3>
-    <div class="card">
-      <ul>
-        <li><strong>What is captured:</strong> the app periodically captures a snapshot of on-screen
-        content, using either Android's Accessibility Service (Android 11+) or MediaProjection screen
-        recording (older versions), depending on device support.</li>
-        <li><strong>How it's processed:</strong> each capture is processed entirely on-device, offline, by
-        an on-device machine learning model that outputs a numeric confidence score indicating whether the
-        image may contain inappropriate content.</li>
-        <li><strong>What happens to the image:</strong> the captured frame is discarded from memory
-        immediately after analysis. It is never written to disk, never uploaded, and never seen by us or
-        any other party.</li>
-        <li><strong>The resulting action:</strong> based solely on the confidence score, the app shows or
-        hides one blur overlay. This is a deterministic, rule-based decision defined entirely in code — not
-        an autonomous AI decision — and the service never performs any click, gesture, or other action on
-        the device.</li>
-      </ul>
-    </div>
+  <h2>تحديثات هذه السياسة</h2>
+  <p>
+    إذا تغيّر ما يجمعه التطبيق، سنحدّث هذه الصفحة والتاريخ أعلاها.
+  </p>
+</section>
 
-    <h3>c. Limited Metadata</h3>
-    <div class="card">
-      <p>The app keeps a minimal local record containing only:</p>
-      <ul>
-        <li>The timestamp of the event.</li>
-        <li>The name of the app that was in the foreground at that time.</li>
-        <li>The numeric confidence score produced by the scan (a number only — never the image itself).</li>
-      </ul>
-      <p>This record is stored on the child's device and synced to the parent account's Firestore family
-      document (a Google Firebase service) <strong>only if the parent has enabled notifications</strong>.
-      It is never shared with any third party outside the family account itself.</p>
-    </div>
+<hr>
 
-    <h3>d. Device Administrator Permission</h3>
-    <div class="card">
-      <p>The app requests Device Administrator access with zero policies enabled — no lock, wipe,
-      password, or camera restrictions. Its only effect is that Android requires this permission to be
-      manually disabled in Settings before the app can be uninstalled, which helps prevent a child from
-      removing the protection app without a parent's involvement.</p>
-    </div>
+<section id="en" lang="en">
+  <h1>Privacy Policy — ParentGuard</h1>
+  <p class="subtitle">Last updated: October 2026</p>
 
-    <h2>2. How We Use Data</h2>
-    <ul>
-      <li>To run the app's core protection feature (detecting and blurring inappropriate content).</li>
-      <li>To let the parent sign in and manage protection settings.</li>
-      <li>To send notifications to the parent (only if enabled).</li>
-      <li>To help prevent uninstallation without a parent's involvement.</li>
-    </ul>
-    <p>We do not use any data for advertising or marketing purposes, we do not build behavioral profiles,
-    and we do not sell data to anyone.</p>
+  <p>
+    ParentGuard is a parental-control app. A parent or guardian installs it on
+    their child's phone, and uses a second phone (the parent device) to see
+    alerts and set limits. This page says what the app collects, where it goes,
+    and how to delete it.
+  </p>
 
-    <h2>3. Third-Party Data Sharing</h2>
-    <p>We do not share user data with any third party for commercial purposes. The only services that
-    process data on our behalf are:</p>
-    <table>
-      <tr><th>Service</th><th>Purpose</th></tr>
-      <tr><td>Firebase Authentication (Google)</td><td>Secure account sign-in and credential storage</td></tr>
-      <tr><td>Firebase Firestore (Google)</td><td>Syncing limited metadata between the child's device and the parent account</td></tr>
-    </table>
-    <p>These services act as data processors on our behalf and are subject to Google's own security and
-    privacy practices.</p>
+  <h2>Screen content: scanned on the phone, never stored or uploaded</h2>
+  <ul>
+    <li>To find inappropriate images, the app takes a picture of the screen
+      again and again while protection is on. It uses Android screen recording
+      (MediaProjection) or, on Android 11 and later, the Accessibility
+      service.</li>
+    <li>An AI model inside the app checks each picture on the child's phone.
+      The picture is then discarded. <strong>Screen pictures are not saved,
+      and are never sent to us or to anyone else.</strong></li>
+    <li>The app does not read the text on the screen, passwords, or anything
+      you type.</li>
+  </ul>
 
-    <h2>4. Data Security &amp; Retention</h2>
-    <ul>
-      <li>Screenshots and their content are never stored at any point — processed and discarded in
-      memory only.</li>
-      <li>Limited metadata is retained until the parent unlinks the account or deletes the app.</li>
-      <li>Unlinking the account removes the device's linkage data from our systems.</li>
-    </ul>
+  <h2>Data we store on our servers</h2>
+  <p>
+    The app uses Google Firebase as its backend. This is what is stored there,
+    and nothing else:
+  </p>
+  <ul>
+    <li><strong>Pairing and accounts:</strong> a random Family ID, a user ID for
+      each device, and the parent's email address (see "Parent account"
+      below).</li>
+    <li><strong>Child name (optional):</strong> a display name the parent or
+      child can type, up to 60 characters. Please do not use a full legal
+      name if you prefer not to.</li>
+    <li><strong>Alerts:</strong> when inappropriate content is found, the app
+      saves the time, the app's name and package name, a confidence score, and
+      the child's ID. No picture is saved. Alerts are only sent if the parent
+      has turned notifications on and the devices are paired.</li>
+    <li><strong>Installed apps:</strong> the name and package name of the apps
+      on the child's phone (no icons, no usage data), so the parent can pick
+      apps to block. It is refreshed each time the app starts.</li>
+    <li><strong>Protection status:</strong> whether protection is on, whether
+      the screen is on, why protection was stopped (password, parent command,
+      or a permission was switched off), and when this was last reported.</li>
+    <li><strong>Parent settings:</strong> blocked and restricted apps, daily
+      time limit, schedule, and whether protection should be on.</li>
+    <li><strong>Notification tokens:</strong> a push-notification token (FCM)
+      for each paired device, so alerts and silent updates can reach it.</li>
+  </ul>
+  <p>
+    Alerts, status and settings are kept until you delete them (see "Deleting
+    your data"). There is no automatic expiry.
+  </p>
 
-    <h2>5. Children's Privacy</h2>
-    <p>This app is designed <strong>for use by a parent</strong> to protect their child, not as an app
-    directed at or intended for direct use by children themselves. The parent account is the only account
-    created and managed within the app. We do not knowingly collect personal information directly from
-    children.</p>
+  <h2>Parent account</h2>
+  <ul>
+    <li>The parent device signs in with an email address and password through
+      Firebase Authentication (a Google service). Your email and password are
+      handled by Firebase and used for sign-in and password-reset emails. We
+      do not see your password.</li>
+    <li>The child device does not use an email. It signs in anonymously and
+      gets a random ID.</li>
+    <li>Separately, the app has its own parent password that locks settings and
+      stops the child from switching protection off. It is stored on the phone
+      only, as a salted hash.</li>
+  </ul>
 
-    <h2>6. Your Rights</h2>
-    <ul>
-      <li>As the registered parent, you may request access to the data associated with your account.</li>
-      <li>You may request full deletion of your account and all associated data.</li>
-      <li>You can unlink your email from a device at any time via the app's settings.</li>
-    </ul>
-    <p>To exercise any of these rights, contact us at the email below.</p>
+  <h2>Messages we send</h2>
+  <ul>
+    <li>An alert to the parent device when something is detected. It shows the
+      child's name (or just "child") and the app's name.</li>
+    <li>A weekly summary to the parent device: only the number of alerts in
+      the last 7 days.</li>
+    <li>Silent updates to the child device that tell it to fetch new parent
+      settings, or to unpair after the family data is deleted.</li>
+  </ul>
 
-    <h2>7. Changes to This Policy</h2>
-    <p>We may update this policy from time to time to reflect changes in how the app works. The "last
-    updated" date at the top of this page will always reflect the most recent revision.</p>
+  <h2>Services that handle data for us</h2>
+  <ul>
+    <li>Google Firebase: Authentication, Firestore database, Cloud Messaging
+      (push), Cloud Functions, and Firebase logs.</li>
+    <li><strong>Play Integrity / App Check:</strong> the app asks Google to
+      confirm that requests come from the real, unmodified app on a genuine
+      device. This sends a device and app check to Google.</li>
+    <li><strong>Crashlytics:</strong> if the app crashes, a report goes to
+      Firebase with the crash details, device model, Android version, app
+      version and a Firebase installation ID. It has no screen content and
+      nothing we add ourselves. You cannot switch this off inside the app.</li>
+  </ul>
+  <p>
+    These services process data on our behalf. We do not sell data, show ads,
+    use advertising or analytics tracking, or share data with anyone else.
+  </p>
 
-    <div class="contact">
-      <h3 style="margin-top:0;">Contact Us</h3>
-      <p>For any privacy or data-related question, or to request account deletion:</p>
-      <p><a href="mailto:ParentGuard.app11@gmail.com">ParentGuard.app11@gmail.com</a></p>
-    </div>
+  <h2>Data kept on the phone only</h2>
+  <ul>
+    <li><strong>Encrypted on the phone:</strong> the parent password hash, the
+      saved email, the pairing details, device role, protection settings,
+      blocked apps and time limits.</li>
+    <li><strong>Not separately encrypted</strong> (protected only by Android's
+      own app storage): the local detection log (time and app), the list of
+      received alerts, the monitored-apps list, language and sync status.</li>
+    <li>Android backup is switched off for this app. Uninstalling the app or
+      clearing its data removes everything stored on the phone.</li>
+  </ul>
 
-  </div>
+  <h2>Permissions the app asks for</h2>
+  <ul>
+    <li><strong>Screen recording (MediaProjection):</strong> to scan the screen
+      on the phone. Android stops it when the screen locks.</li>
+    <li><strong>Accessibility service:</strong> a second way to scan the
+      screen that keeps working while the screen is locked. It takes the screen
+      picture, and reads the name of the app that is open and the size and
+      position of on-screen elements such as a video player. It does not read
+      text or passwords. The app explains this and asks for your agreement
+      before sending you to the Accessibility settings.</li>
+    <li><strong>Display over other apps:</strong> to blur flagged content and to
+      show a small badge that protection is on.</li>
+    <li><strong>Usage access:</strong> to know which app is in front, for
+      time limits and blocking.</li>
+    <li><strong>Notifications:</strong> for the always-on "protection is running"
+      notice and for alerts on the parent device.</li>
+    <li><strong>Camera:</strong> only to scan the pairing QR code. No photo or
+      video is taken or saved.</li>
+    <li><strong>Device admin:</strong> makes it harder to uninstall the app
+      without the parent password.</li>
+    <li><strong>Start after reboot, battery-optimization exemption,
+      foreground service:</strong> so protection keeps running in the
+      background.</li>
+    <li><strong>Biometrics (optional):</strong> to unlock the app with a
+      fingerprint or face. It stays on the phone; we receive nothing.</li>
+  </ul>
 
-  <footer>
-    ParentGuard — Privacy Policy
-  </footer>
+  <h2>Deleting your data</h2>
+  <p>
+    On the parent device, open the Remote Control screen and tap "Permanently
+    delete family data".
+  </p>
+  <ul>
+    <li><strong>This deletes</strong> everything stored for the family in our
+      database: the family record, paired children, child names, alerts,
+      protection status, settings, notification tokens, the installed-app list
+      and pending invites. The child device is told to unpair. It runs on our
+      server, so it can take a short while.</li>
+    <li><strong>This does not delete</strong> the sign-in accounts (the parent's
+      email account and the child device's anonymous ID), crash reports kept
+      by Firebase, or server log lines kept by Google Cloud.</li>
+    <li><strong>No in-app account deletion yet.</strong> The app does not
+      have a way to delete the sign-in account. "Delete family data" removes
+      the family data, but not the sign-in account.</li>
+    <li>Uninstalling the app removes only what is stored on that phone.</li>
+  </ul>
 
-</div>
+  <h2>Children's privacy</h2>
+  <p>
+    The app is set up by a parent or guardian and runs on their child's phone.
+    It is not made for children to use on their own. The parent or guardian is
+    responsible for setting it up in line with the law where they live.
+  </p>
+
+  <h2>Contact</h2>
+  <p class="contact">parentguard.app11@gmail.com</p>
+
+  <h2>Changes to this policy</h2>
+  <p>
+    If the app changes what it collects, we will update this page and the date
+    at the top.
+  </p>
+</section>
+
 </body>
 </html>
