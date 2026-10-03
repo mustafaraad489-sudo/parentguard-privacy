@@ -48,7 +48,7 @@
 
 <section id="ar" lang="ar">
   <h1>سياسة الخصوصية — ParentGuard</h1>
-  <p class="subtitle">آخر تحديث: أكتوبر 2026</p>
+  <p class="subtitle">آخر تحديث: 4 أكتوبر 2026</p>
 
   <p>
     ParentGuard تطبيق رقابة أبوية. يثبّته الوالد أو الوصي على هاتف الطفل،
@@ -80,8 +80,11 @@
       بحد أقصى 60 حرفاً. يمكنك ألا تستخدم الاسم الكامل.</li>
     <li><strong>التنبيهات:</strong> عند اكتشاف محتوى غير لائق يحفظ التطبيق
       الوقت، واسم التطبيق واسم حزمته، ودرجة ثقة، ومعرّف الطفل. لا تُحفظ أي
-      صورة. ولا تُرسَل التنبيهات إلا إذا فعّل الوالد الإشعارات وكان الجهازان
-      مقترنين.</li>
+      صورة. على هاتف الطفل المقترن بالإصدار 1.5 أو أحدث تكون التنبيهات
+      <strong>مفعّلة افتراضياً</strong>، ويمكن إيقافها من هاتف الطفل (شاشة "ربط
+      جهاز الأهل"، مفتاح "إشعار الأهل عند الاكتشاف"). الهواتف التي اقترنت قبل
+      ذلك تحتفظ باختيارها. لا تُرسَل التنبيهات إلا والجهازان مقترنان وهذا
+      الإعداد مفعّل.</li>
     <li><strong>التطبيقات المثبّتة:</strong> اسم كل تطبيق على هاتف الطفل واسم
       حزمته (بلا أيقونات ولا بيانات استخدام)، ليختار الوالد التطبيقات التي
       يريد حظرها. تُحدَّث القائمة كل مرة يبدأ فيها التطبيق.</li>
@@ -92,10 +95,14 @@
       الوقت اليومي، والجدول، وهل يجب تشغيل الحماية.</li>
     <li><strong>رموز الإشعارات:</strong> رمز إشعارات (FCM) لكل جهاز مقترن،
       لتصل إليه التنبيهات والتحديثات الصامتة.</li>
+    <li><strong>سجل الاقتران:</strong> عند اقتران هاتف الطفل يحفظ سجل معرّف
+      هاتف الطفل ومعرّف الوالد ورمز اقتران لمرة واحدة (يُستهلك عند نجاح
+      الاقتران). يُحذف مع بيانات العائلة.</li>
   </ul>
   <p>
-    تبقى التنبيهات والحالة والإعدادات إلى أن تحذفها أنت (انظر "حذف بياناتك").
-    لا يوجد حذف تلقائي بعد مدة معيّنة.
+    تبقى التنبيهات والحالة والإعدادات وسجلات الاقتران ورموز الإشعارات إلى أن
+    تحذف بيانات العائلة أو حسابك (انظر "حذف بياناتك وحسابك"). لا يوجد حذف
+    تلقائي بعد مدة معيّنة.
   </p>
 
   <h2>حساب الأهل</h2>
@@ -117,7 +124,7 @@
       واسم التطبيق.</li>
     <li>ملخص أسبوعي إلى جهاز الأهل: عدد التنبيهات في آخر 7 أيام فقط.</li>
     <li>تحديثات صامتة إلى جهاز الطفل تطلب منه جلب إعدادات الأهل الجديدة، أو
-      فك الاقتران بعد حذف بيانات العائلة.</li>
+      فك الاقتران بعد حذف بيانات العائلة أو حساب الأهل.</li>
   </ul>
 
   <h2>الخدمات التي تعالج البيانات نيابة عنا</h2>
@@ -175,25 +182,40 @@
       الوجه. تبقى على الهاتف ولا نستلم منها شيئاً.</li>
   </ul>
 
-  <h2>حذف بياناتك</h2>
+  <h2 id="delete-ar">حذف بياناتك وحسابك</h2>
   <p>
-    على جهاز الأهل، افتح شاشة التحكم عن بعد واضغط "حذف بيانات العائلة
-    نهائياً".
+    هناك خياران على جهاز الأهل، وكلاهما في شاشة التحكم عن بعد.
   </p>
   <ul>
-    <li><strong>هذا يحذف</strong> كل ما هو مخزَّن للعائلة في قاعدة بياناتنا:
-      سجل العائلة، والأطفال المقترنين، وأسماء الأطفال، والتنبيهات، وحالة
-      الحماية، والإعدادات، ورموز الإشعارات، وقائمة التطبيقات المثبّتة،
-      والدعوات المعلّقة. ويُطلب من جهاز الطفل فك الاقتران. يعمل الحذف على
-      خادمنا، لذا قد يستغرق وقتاً قصيراً.</li>
-    <li><strong>هذا لا يحذف</strong> حسابات تسجيل الدخول (حساب بريد الأهل
-      والمعرّف المجهول لجهاز الطفل)، ولا تقارير الأعطال المحفوظة لدى
-      Firebase، ولا سطور سجلات الخادم المحفوظة لدى Google Cloud.</li>
-    <li><strong>لا يوجد حذف للحساب من داخل التطبيق بعد.</strong> ليس في التطبيق
-      طريقة لحذف حساب تسجيل الدخول. "حذف بيانات العائلة" يزيل بيانات العائلة،
-      لكنه لا يزيل حساب تسجيل الدخول.</li>
-    <li>حذف التطبيق يزيل فقط ما هو مخزَّن على ذلك الهاتف.</li>
+    <li><strong>حذف بيانات العائلة:</strong> اضغط "حذف بيانات العائلة
+      نهائياً". يحذف هذا كل ما هو مخزَّن للعائلة في قاعدة بياناتنا: سجل
+      العائلة، والأطفال المقترنين، وأسماء الأطفال، والتنبيهات، وحالة الحماية،
+      والإعدادات، ورموز الإشعارات، وقائمة التطبيقات المثبّتة، وسجلات الاقتران،
+      والدعوات المعلّقة. ويُطلب من هاتف الطفل فك الاقتران. تبقى حسابات تسجيل
+      الدخول؛ ولا يزيلها إلا "حذف حسابي".</li>
+    <li><strong>حذف حسابك:</strong> اضغط "حذف حسابي"، وضع علامة "أفهم أن هذا
+      لا يمكن التراجع عنه"، وأدخل كلمة مرور حسابك وأكّد. يحذف هذا حساب الأهل
+      (البريد وتسجيل الدخول) وكل عائلة مرتبطة به مع جميع البيانات المذكورة
+      أعلاه، إضافة إلى معرّفات تسجيل الدخول المجهولة لهواتف الأطفال المرتبطة.
+      يعمل على خادمنا ويستغرق عادة نحو دقيقة. بعدها يعود هذا الهاتف إلى شاشة
+      البداية وتُزال كلمة مرور التطبيق.</li>
+    <li><strong>بدون التطبيق</strong> (مثلاً إذا فقدت الهاتف): استخدم صفحة
+      <a href="https://parent-guard-14323.web.app/delete-account.html">حذف حساب ParentGuard</a>. نردّ خلال 7 أيام
+      ونُنهي الحذف خلال 30 يوماً.</li>
   </ul>
+  <p>
+    <strong>ماذا يحدث على هاتف الطفل.</strong> يُفكّ اقترانه. تستمر الحماية
+    بإعدادات الهاتف نفسه وكلمة مروره، وتبقى محظورة التطبيقات التي حظرها
+    الهاتف بنفسه. وتُمسح كل الإعدادات التي ضبطها الوالد عن بعد (التطبيقات
+    المحظورة والمقيّدة، والحد اليومي، والجدول) والاقتران. وإذا كان هاتف الطفل
+    غير متصل يحدث ذلك عند اتصاله في المرة التالية.
+  </p>
+  <p>
+    <strong>ما لا يُحذف.</strong> تقارير الأعطال المحفوظة لدى Firebase
+    Crashlytics وسطور سجلات الخادم المحفوظة لدى Google Cloud، طوال المدة
+    المحدودة التي تحتفظ بها Google. لا تحتوي على محتوى الشاشة. حذف التطبيق
+    يزيل فقط ما هو مخزَّن على ذلك الهاتف.
+  </p>
 
   <h2>خصوصية الأطفال</h2>
   <p>
@@ -215,7 +237,7 @@
 
 <section id="en" lang="en">
   <h1>Privacy Policy — ParentGuard</h1>
-  <p class="subtitle">Last updated: October 2026</p>
+  <p class="subtitle">Last updated: 4 October 2026</p>
 
   <p>
     ParentGuard is a parental-control app. A parent or guardian installs it on
@@ -251,8 +273,12 @@
       name if you prefer not to.</li>
     <li><strong>Alerts:</strong> when inappropriate content is found, the app
       saves the time, the app's name and package name, a confidence score, and
-      the child's ID. No picture is saved. Alerts are only sent if the parent
-      has turned notifications on and the devices are paired.</li>
+      the child's ID. No picture is saved. For a child phone paired with
+      version 1.5 or later, alerts are <strong>on by default</strong>, and they
+      can be switched off on the child phone (Link Parent Device screen,
+      "Notify Parent When Detected"). Phones paired earlier keep the choice
+      they had. Alerts are only sent while the devices are paired and this
+      setting is on.</li>
     <li><strong>Installed apps:</strong> the name and package name of the apps
       on the child's phone (no icons, no usage data), so the parent can pick
       apps to block. It is refreshed each time the app starts.</li>
@@ -263,10 +289,15 @@
       time limit, schedule, and whether protection should be on.</li>
     <li><strong>Notification tokens:</strong> a push-notification token (FCM)
       for each paired device, so alerts and silent updates can reach it.</li>
+    <li><strong>Pairing record:</strong> when a child phone is paired, a record
+      holds the child phone's ID, the parent's ID and a one-time pairing code
+      (used up once pairing succeeds). It is deleted together with the family
+      data.</li>
   </ul>
   <p>
-    Alerts, status and settings are kept until you delete them (see "Deleting
-    your data"). There is no automatic expiry.
+    Alerts, status, settings, pairing records and notification tokens are kept
+    until you delete the family data or your account (see "Deleting your data
+    and your account"). There is no automatic expiry.
   </p>
 
   <h2>Parent account</h2>
@@ -289,7 +320,8 @@
     <li>A weekly summary to the parent device: only the number of alerts in
       the last 7 days.</li>
     <li>Silent updates to the child device that tell it to fetch new parent
-      settings, or to unpair after the family data is deleted.</li>
+      settings, or to unpair after the family data or the parent account is
+      deleted.</li>
   </ul>
 
   <h2>Services that handle data for us</h2>
@@ -348,25 +380,43 @@
       fingerprint or face. It stays on the phone; we receive nothing.</li>
   </ul>
 
-  <h2>Deleting your data</h2>
+  <h2 id="delete">Deleting your data and your account</h2>
   <p>
-    On the parent device, open the Remote Control screen and tap "Permanently
-    delete family data".
+    There are two options on the parent device. Both are on the Remote Control
+    screen.
   </p>
   <ul>
-    <li><strong>This deletes</strong> everything stored for the family in our
-      database: the family record, paired children, child names, alerts,
-      protection status, settings, notification tokens, the installed-app list
-      and pending invites. The child device is told to unpair. It runs on our
-      server, so it can take a short while.</li>
-    <li><strong>This does not delete</strong> the sign-in accounts (the parent's
-      email account and the child device's anonymous ID), crash reports kept
-      by Firebase, or server log lines kept by Google Cloud.</li>
-    <li><strong>No in-app account deletion yet.</strong> The app does not
-      have a way to delete the sign-in account. "Delete family data" removes
-      the family data, but not the sign-in account.</li>
-    <li>Uninstalling the app removes only what is stored on that phone.</li>
+    <li><strong>Delete family data:</strong> tap "Permanently delete family
+      data". This deletes everything stored for the family in our database:
+      the family record, paired children, child names, alerts, protection
+      status, settings, notification tokens, the installed-app list, pairing
+      records and pending invites. The child phone is told to unpair. The
+      sign-in accounts stay; only "Delete my account" removes them.</li>
+    <li><strong>Delete your account:</strong> tap "Delete my account", tick "I
+      understand", enter your account password and confirm. This deletes your
+      parent account (email and sign-in) and every family linked to it with
+      all the data above, plus the anonymous sign-in IDs of the linked child
+      phones. It runs on our server and normally takes about a minute. This
+      phone then returns to the start screen and the app password is
+      removed.</li>
+    <li><strong>Without the app</strong> (for example if you lost the phone):
+      use the page <a href="https://parent-guard-14323.web.app/delete-account.html">Delete your ParentGuard
+      account</a>. We reply within 7 days and finish within 30 days.</li>
   </ul>
+  <p>
+    <strong>What happens on the child phone.</strong> It unpairs. Protection
+    keeps running with the phone's own settings and password, and apps the
+    phone blocked by itself stay blocked. Everything the parent set remotely
+    (blocked and restricted apps, daily limit, schedule) and the pairing are
+    cleared. If the child phone was offline, this happens the next time it
+    connects.
+  </p>
+  <p>
+    <strong>What is not deleted.</strong> Crash reports kept by Firebase
+    Crashlytics and server log lines kept by Google Cloud, for the limited
+    period Google keeps them. They contain no screen content. Uninstalling the
+    app removes only what is stored on that phone.
+  </p>
 
   <h2>Children's privacy</h2>
   <p>
